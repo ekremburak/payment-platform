@@ -1,0 +1,49 @@
+{
+    "ReRoutes": [
+        {
+            "DownstreamPathTemplate": "/Product",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/Product",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9001
+                }
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/Product/{id}",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/Product/{id}",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9001
+                }
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/WeatherForecast",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/WeatherForecast",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9002
+                }
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:5000"
+    }
+}
